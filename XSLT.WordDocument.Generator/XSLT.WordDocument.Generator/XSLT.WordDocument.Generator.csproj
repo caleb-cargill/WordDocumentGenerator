@@ -56,13 +56,17 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Generated\MyMovies.docx" />
+    <None Include="Generated\SimpleEquations.docx" />
     <None Include="packages.config" />
     <None Include="Template\MyMoviesTemplate.docx" />
+    <None Include="Template\SimpleEquationsTemplate.docx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="Data\MyMovies.xml" />
+    <Content Include="Data\SimpleEquations.xml" />
     <Content Include="XSLT\MyMovies.xslt" />
+    <Content Include="XSLT\SimpleEquations.xslt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

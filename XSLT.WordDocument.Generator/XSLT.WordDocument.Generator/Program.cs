@@ -21,7 +21,7 @@ namespace XSLT.WordDocument.Generator
         static void Main(string[] args)
         {
             // Document Type to Generate
-            DocumentName doc = DocumentName.MyMovies;
+            DocumentName doc = DocumentName.SimpleEquations;
 
             // Get file locations.            
             string xmlDataFile = doc.GetFormattedPath(Enums.DocumentType.Data);

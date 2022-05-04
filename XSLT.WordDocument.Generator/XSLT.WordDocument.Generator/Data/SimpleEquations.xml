@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Equations>
+  <Property name="Area of Circle" description="The equation for area of a circle." equation="A = PI*r^2">    
+    <Variables>
+      <Variable>
+        <Name>A</Name>
+        <VariableDescription>Area of the circle</VariableDescription>
+      </Variable>
+      <Variable>
+        <Name>PI</Name>
+        <VariableDescription>Mathematical constant that is the ratio of a circle's circumference to its diameter. PI, 3.14159265359...</VariableDescription>
+      </Variable>
+      <Variable>
+        <Name>r</Name>
+        <VariableDescription>Radius of the cirlce. Radius = 1/2 * Diameter.</VariableDescription>
+      </Variable>
+    </Variables>
+  </Property>
+  <Property name="Hypotenuse" description="The equation for the hypotenuse of a right-angled triangle using Pythagorean Theorem." equation="C = Sqrt(a^2 + b^2)">
+    <Variables>
+      <Variable>
+        <Name>C</Name>
+        <VariableDescription>Length of the hypotenuse of a right triangle.</VariableDescription>
+      </Variable>
+      <Variable>
+        <Name>b</Name>
+        <VariableDescription>Length of a side of a right triangle.</VariableDescription>
+      </Variable>
+      <Variable>
+        <Name>a</Name>
+        <VariableDescription>Length of a side of a right triangle.</VariableDescription>
+      </Variable>
+    </Variables>
+  </Property>
+</Equations>
