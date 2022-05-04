@@ -1,0 +1,10 @@
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\bin\Debug\XSLT.WordDocument.Generator.exe.config
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\bin\Debug\XSLT.WordDocument.Generator.exe
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\bin\Debug\XSLT.WordDocument.Generator.pdb
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\obj\Debug\XSLT.WordDocument.Generator.csproj.CoreCompileInputs.cache
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\obj\Debug\XSLT.WordDocument.Generator.csproj.CopyComplete
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\obj\Debug\XSLT.WordDocument.Generator.exe
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\obj\Debug\XSLT.WordDocument.Generator.pdb
+C:\Users\caleb\source\repos\XSLT.WordDocument.Generator\XSLT.WordDocument.Generator\obj\Debug\XSLT.WordDocument.Generator.csproj.AssemblyReference.cache
