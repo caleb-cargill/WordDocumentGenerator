@@ -8,8 +8,9 @@ namespace XSLT.WordDocument.Generator.Enums
 {
     public enum DocumentName
     {
-        Unknown = 0,
+        Blank = 0,
         MyMovies = 1,
-        SimpleEquations = 2
+        SimpleEquations = 2,
+        FormattedEquations = 3
     }
 }

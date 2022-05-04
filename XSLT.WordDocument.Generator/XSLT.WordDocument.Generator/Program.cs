@@ -21,12 +21,15 @@ namespace XSLT.WordDocument.Generator
         static void Main(string[] args)
         {
             // Document Type to Generate
-            DocumentName doc = DocumentName.SimpleEquations;
+            DocumentName doc = DocumentName.FormattedEquations;
+
+            // Generate the XSLT file
+            Common.GenerateXSLT(doc);
 
             // Get file locations.            
             string xmlDataFile = doc.GetFormattedPath(Enums.DocumentType.Data);
             string xsltFile = doc.GetFormattedPath(Enums.DocumentType.XSLT);
-            string templateDocument = doc.GetFormattedPath(Enums.DocumentType.Template);
+            string templateDocument = Common.GetFormattedPath(DocumentName.Blank, Enums.DocumentType.Template);
             string generatedDocument = doc.GetFormattedPath(Enums.DocumentType.Generated);
 
             // Create a writer for the output of the Xsl Transformation.
@@ -59,7 +62,7 @@ namespace XSLT.WordDocument.Generator
                     generated.MainDocumentPart.Document.Body = updatedBodyContent;
 
                     // Save the generated document.
-                    generated.MainDocumentPart.Document.Save();                        
+                    generated.MainDocumentPart.Document.Save();
                 }
             }
 
