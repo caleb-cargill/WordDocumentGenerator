@@ -21,7 +21,7 @@ namespace XSLT.WordDocument.Generator
         static void Main(string[] args)
         {
             // Document Type to Generate
-            DocumentName doc = DocumentName.FormattedEquations;
+            DocumentName doc = DocumentName.MyMovies;
 
             // Generate the XSLT file
             Common.GenerateXSLT(doc);
@@ -29,7 +29,7 @@ namespace XSLT.WordDocument.Generator
             // Get file locations.            
             string xmlDataFile = doc.GetFormattedPath(Enums.DocumentType.Data);
             string xsltFile = doc.GetFormattedPath(Enums.DocumentType.XSLT);
-            string templateDocument = Common.GetFormattedPath(DocumentName.Blank, Enums.DocumentType.Template);
+            string templateDocument = doc.GetFormattedPath(Enums.DocumentType.Template);
             string generatedDocument = doc.GetFormattedPath(Enums.DocumentType.Generated);
 
             // Create a writer for the output of the Xsl Transformation.

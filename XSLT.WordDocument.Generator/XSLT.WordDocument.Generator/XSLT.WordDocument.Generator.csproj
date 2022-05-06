@@ -51,6 +51,13 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Enums\DocumentName.cs" />
     <Compile Include="Enums\DocumentType.cs" />
+    <Compile Include="Models\Equations.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Movies.cs" />
+    <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\Variable.cs" />
+    <Compile Include="Models\Variables.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,7 +67,6 @@
     <None Include="Generated\MyMovies.docx" />
     <None Include="Generated\SimpleEquations.docx" />
     <None Include="packages.config" />
-    <None Include="Template\BlankTemplate.docx" />
     <None Include="Template\MyMoviesTemplate.docx" />
     <None Include="Template\SimpleEquationsTemplate.docx" />
   </ItemGroup>
@@ -70,6 +76,7 @@
     <Content Include="Data\MyMovies.xml" />
     <Content Include="Data\SimpleEquations.xml" />
     <Content Include="XSLT\FormattedEquations.xslt" />
+    <Content Include="XSLT\Generated.xslt" />
     <Content Include="XSLT\MyMovies.xslt" />
     <Content Include="XSLT\SimpleEquations.xslt" />
   </ItemGroup>
