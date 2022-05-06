@@ -85,6 +85,11 @@ namespace XSLT.WordDocument.Generator
                     </w:numPr>
                 </w:pPr>";
 
+        public static string GetSubtitleStyle()
+            => @"<w:pPr>
+                    <w:pStyle w:val=""Subtitle""/>
+                </w:pPr>";
+
         public static string GetOpenParagraph()
             => @"<w:p w14:paraId=""3CCAD2A4"" w14:textId=""7F46B842"" w:rsidR=""004F3118"" w:rsidRPr=""004F3118"" w:rsidRDefault=""004F3118"" w:rsidP=""004F3118"">";
 

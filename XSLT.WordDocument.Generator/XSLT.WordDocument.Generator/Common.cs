@@ -51,7 +51,7 @@ namespace XSLT.WordDocument.Generator
         /// <param name="name"></param>
         public static void GenerateXSLT(this DocumentName name)
         {
-            string path = $"..\\..\\XSLT\\{name}.xslt";
+            string path = $"..\\..\\XSLT\\Generated.xslt";
 
             using (FileStream fs = File.Create(path)) { };
 
@@ -84,7 +84,7 @@ namespace XSLT.WordDocument.Generator
                     content = GetXSLTMovieContent();
                     break;
                 case (DocumentName.SimpleEquations):
-
+                    content = GetXSLTSimpleEquationsContent();
                     break;
                 case (DocumentName.FormattedEquations):
 
@@ -131,6 +131,70 @@ namespace XSLT.WordDocument.Generator
             content += " (";
             content += XSLT.GetSelect(path: "Released");
             content += ") ";
+            content += XSLT.GetCloseText();
+            content += XSLT.GetCloseWords();
+            content += XSLT.GetCloseParagraph();
+
+            content += XSLT.GetForeachClose();
+            content += XSLT.GetForeachClose();
+
+            return content;
+        }
+
+        public static string GetXSLTSimpleEquationsContent()
+        {
+            string content = string.Empty;
+
+            XmlSerializer serializer = new XmlSerializer(typeof(Equations));
+
+            Equations equations = null;
+
+            using (StringReader reader = new StringReader(System.IO.File.ReadAllText("..\\..\\Data\\SimpleEquations.xml")))
+            {
+                equations = (Equations)serializer.Deserialize(reader);
+            }
+
+            content += XSLT.GetHeader("Equations");
+
+            content += XSLT.GetForeach("Equations/Property");
+
+            content += XSLT.GetHeading2Tags(select: $"{nameof(Property.Name).ToLower()}");
+            
+            // description
+            content += XSLT.GetOpenParagraph();
+            content += XSLT.GetSubtitleStyle();
+            content += XSLT.GetOpenWords(bold: false);
+            content += XSLT.GetOpenText(preserveSpace: false);
+            content += XSLT.GetSelect("@description");
+            content += XSLT.GetCloseText();
+            content += XSLT.GetCloseWords();
+            content += XSLT.GetCloseParagraph();
+
+            // equation
+            content += XSLT.GetOpenParagraph();
+            content += XSLT.GetOpenWords(bold: false);
+            content += XSLT.GetOpenText(preserveSpace: false);
+            content += XSLT.GetSelect("@equation");
+            content += XSLT.GetCloseText();
+            content += XSLT.GetCloseWords();
+            content += XSLT.GetCloseParagraph();
+
+            content += XSLT.GetForeach("Variables/Variable");
+
+            content += XSLT.GetOpenParagraph();
+            content += XSLT.GetListStyle();
+            content += XSLT.GetOpenWords(bold: true);
+            content += XSLT.GetOpenText(preserveSpace: false);
+            content += XSLT.GetSelect(path: "Name");
+            content += XSLT.GetCloseText();
+            content += XSLT.GetCloseWords();
+            content += XSLT.GetCloseParagraph();
+
+            content += XSLT.GetOpenParagraph();
+            content += XSLT.GetListStyle();
+            content += XSLT.GetOpenWords(bold: false);
+            content += XSLT.GetOpenText(preserveSpace: false);
+            content += XSLT.GetSelect(path: "VariableDescription");
             content += XSLT.GetCloseText();
             content += XSLT.GetCloseWords();
             content += XSLT.GetCloseParagraph();
