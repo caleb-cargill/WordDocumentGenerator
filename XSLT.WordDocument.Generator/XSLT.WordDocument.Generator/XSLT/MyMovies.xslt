@@ -44,8 +44,7 @@
                             <w:r>
                                 <w:t>Movies</w:t>
                             </w:r>
-                    </w:p><xsl:for-each select="Movies/Genre">
-<w:p w14:paraId="512BD978" 
+                    </w:p><xsl:for-each select="Movies/Genre"><w:p w14:paraId="512BD978" 
                             w14:textId="2B823227" 
                             w:rsidR="004F3118" 
                             w:rsidRDefault="004F3118" 
@@ -59,28 +58,13 @@
                             </w:t>
                         </w:r>
                     </w:p>
-<xsl:for-each select="Movie">
-<w:p w14:paraId="3CCAD2A4" w14:textId="7F46B842" w:rsidR="004F3118" w:rsidRPr="004F3118" w:rsidRDefault="004F3118" w:rsidP="004F3118">
-                          <w:pPr>
-                            <w:pStyle w:val="ListParagraph"/>
-                            <w:numPr>
-                              <w:ilvl w:val="0"/>
-                              <w:numId w:val="2"/>
-                            </w:numPr>
-                          </w:pPr>
-                          <w:r w:rsidRPr="00BF350E">
-                            <w:rPr>
-                              <w:b/>
-                            </w:rPr>
-                            <w:t>
-                              <xsl:value-of select="Name"/>
-                            </w:t>
-                          </w:r>
-                          <w:r w:rsidR="00C46B60">
-                            <w:t xml:space="preserve"> (<xsl:value-of select="Released"/>)</w:t>
-                          </w:r>
-                        </w:p>
-</xsl:for-each></xsl:for-each>
+<xsl:for-each select="Movie"><w:p w14:paraId="3CCAD2A4" w14:textId="7F46B842" w:rsidR="004F3118" w:rsidRPr="004F3118" w:rsidRDefault="004F3118" w:rsidP="004F3118"><w:pPr>
+                    <w:pStyle w:val="ListParagraph"/>
+                    <w:numPr>
+                        <w:ilvl w:val="0"/>
+                        <w:numId w:val="2"/>
+                    </w:numPr>
+                </w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t><xsl:value-of select="Name"/></w:t></w:r><w:r><w:t xml:space="preserve"> (<xsl:value-of select="Released"/>) </w:t></w:r></w:p></xsl:for-each></xsl:for-each>
 <w:sectPr w:rsidR="007A5E62" w:rsidRPr="007A5E62">
                                                     <w:pgSz w:w="12240" w:h="15840"/>
                                                     <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="720" w:footer="720" w:gutter="0"/>
